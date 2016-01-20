@@ -2,3 +2,7 @@
 
 block content
     div(class="background")
+    div(class="menu")
+        each val, index in ['Portfolio', 'Summary', 'Qualifications', 'Experience']
+            span(id="Span" + val, class="menuitem")
+                |#{val}
