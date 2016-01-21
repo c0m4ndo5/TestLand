@@ -1,8 +1,10 @@
 ﻿extends layout
 
 block content
+    script(type="text/javascript", src="//code.jquery.com/jquery-2.2.0.min.js")
+    script(type="text/javascript", src="/javascripts/init.js")
     div(class="background")
     div(class="menu")
-        each val, index in ['Portfolio', 'Summary', 'Qualifications', 'Experience']
-            span(id="Span" + val, class="menuitem")
+        each val, index in ['PORTFOLIO', 'SUMMARY', 'QUALIFICATIONS', 'EXPERIENCE']
+            span(id="item" + index, class="menuitem")
                 |#{val}
