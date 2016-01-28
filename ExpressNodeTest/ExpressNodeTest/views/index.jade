@@ -1,6 +1,8 @@
 ﻿extends layout
 
 block content
+    - var navitems = ['PORTFOLIO', 'SUMMARY', 'QUALIFICATIONS', 'EXPERIENCE'];
+    script var navitems = !{JSON.stringify(navitems)};
     script(type="text/javascript", src="//code.jquery.com/jquery-2.2.0.min.js")
     script(type="text/javascript", src="/javascripts/init.js")
     div(class="background")
@@ -9,6 +11,6 @@ block content
         div(class="navbarright")
         div(class="navbottom")
     div(class="menu")
-        each val, index in ['PORTFOLIO', 'SUMMARY', 'QUALIFICATIONS', 'EXPERIENCE']
+        each val, index in navitems
             span(id="item" + index, class="menuitem")
                 |#{val}

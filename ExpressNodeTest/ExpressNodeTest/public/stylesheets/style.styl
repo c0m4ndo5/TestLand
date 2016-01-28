@@ -24,18 +24,26 @@ a
 	position:absolute
 	top:0px
 	left:0px
-	width:25%
+	width:20%
 	height:100%
 	background:url("/images/arrowleft.png") no-repeat left center
 	background-size:20%
+	opacity:0
+	transition: opacity 1s
+	&:hover
+		opacity:0.8
 .navbarright
 	position:absolute
 	top:0px
 	left:calc(100% - 25%)
-	width:25%
+	width:20%
 	height:100%
 	background:url("/images/arrowright.png") no-repeat right center
 	background-size:20%
+	opacity:0
+	transition: opacity 1s
+	&:hover
+		opacity:0.8
 .navbottom
 	position:absolute
 	height:50px
@@ -61,3 +69,5 @@ a
 	-webkit-user-select: none     
 	-moz-user-select: none
 	-ms-user-select: none
+	top:75%
+	left:75%
