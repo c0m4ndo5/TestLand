@@ -36,7 +36,10 @@
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
     <Content Include="package.json" />
+    <Content Include="public\images\arrowleft.png" />
+    <Content Include="public\images\arrowright.png" />
     <Content Include="public\images\bg1.jpg" />
+    <Content Include="public\images\coffee.png" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
