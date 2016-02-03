@@ -12,8 +12,26 @@ block content
         div(class="navbottom")
         div(class="contentarea")
             div(id=navitems[0] class="contentitem")
-                span(style="text-align:center;font-size:25px") 
+                span(style="display:block;text-align:center;font-size:36px;width:100%;margin-top:10px;margin-bottom:25px") 
                     |YURI WERGRZN
+                span(style="font-size:16px")
+                    |A good developer knows how to create good code and not just program on specific languages. This is what drives me to seek new knowledge and skills to stay up to date in today's competitive market. 
+                    br
+                    |I am a creative and persevering software developer looking for new opportunities to work abroad. Welcome to my portfolio!
+                    br
+                    br
+                    |Below you will contact information and link to common social/networking platforms where you may reach and connect with me
+                    br
+                    |Scroll/click sideways to see more
+                div(id="details" style="display:block;width:560px;background-color:rgba(230,230,230,0.6);height:300px;margin:auto;margin-top:20px")
+                    style(type="text/css")
+                        | .contactitem{display:inline-block; width:160px;height:130px;margin:5px}
+                    div(id="linkedin" class="contactitem" style="background: url('/images/linkedin.png') no-repeat center center")
+                    div(id="facebook" class="contactitem")
+                    div(id="tbd" class="contactitem")
+                    div(id="email" class="contactitem")
+                    div(id="skype" class="contactitem")
+                    div(id="phone" class="contactitem")
     div(class="menu")
         each val, index in navitems
             span(id="item" + index, class="menuitem")

@@ -40,6 +40,8 @@
     <Content Include="public\images\arrowright.png" />
     <Content Include="public\images\bg1.jpg" />
     <Content Include="public\images\coffee.png" />
+    <Content Include="public\images\linkedin.png" />
+    <Content Include="public\stylesheets\style.css" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
