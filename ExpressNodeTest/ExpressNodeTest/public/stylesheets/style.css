@@ -23,6 +23,7 @@ a {
   left: 0px;
   height: calc(100% - 220px);
   width: 100%;
+  overflow-y: auto;
 }
 .contentarea {
   display: block;
@@ -100,4 +101,14 @@ a {
   -ms-user-select: none;
   top: 75%;
   left: 75%;
+}
+.contactitem {
+  display: inline-block;
+  width: 160px;
+  height: 130px;
+  margin: 5px;
+  opacity: 0.8;
+}
+.contactitem:hover {
+  opacity: 1;
 }
