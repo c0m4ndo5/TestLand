@@ -1,7 +1,7 @@
 ﻿extends layout
 
 block content
-    - var navitems = ['PORTFOLIO', 'SUMMARY', 'QUALIFICATIONS', 'EXPERIENCE'];
+    - var navitems = ['SUMMARY', 'EXPERENCE', 'MORE INFO'];
     script var navitems = !{JSON.stringify(navitems)};
     script(type="text/javascript", src="//code.jquery.com/jquery-2.2.0.min.js")
     script(type="text/javascript", src="/javascripts/init.js")
@@ -26,9 +26,22 @@ block content
                     br
                     br
                 div(id="details" style="display:block;width:560px;background-color:rgba(230,230,230,0.6);height:160px;margin:auto;margin-top:20px")
-                    div(id="linkedin" class="contactitem" style="background: url('/images/linkedin.png') no-repeat center center")
-                    div(id="facebook" class="contactitem" style="background: url('/images/facebook.png') no-repeat center center")
-                    div(id="gmail" class="contactitem" style="background: url('/images/gmail.png') no-repeat center center")
+                    a(href="https://www.linkedin.com/in/yuri-wergrzn-4269b497" target="_newtab") 
+                        div(id="linkedin" class="contactitem" style="background: url('/images/linkedin.png') no-repeat center center")
+                    a(href="https://www.facebook.com/yuri.wergrzn" target="_newtab") 
+                        div(id="facebook" class="contactitem" style="background: url('/images/facebook.png') no-repeat center center")
+                    a(href="mailto:yuri.wergrzn@gmail.com" target="_newtab") 
+                        div(id="gmail" class="contactitem" style="background: url('/images/gmail.png') no-repeat center center")
+            div(id=navitems[1] class="contentitem")
+                span(style="display:block;text-align:center;font-size:36px;width:100%;margin-top:10px;margin-bottom:25px") 
+                    |YURI WERGRZN
+                span(style="font-size:16px")
+                    |Graduated in Brazil - Technology University of Paraná as a Computer Engineer in 2012, I have programmed in C/C++ and Java since 2007.
+                    br
+                    br
+                    |In 2012 I also joined ExxonMobil as a full time employee, working as a technical lead & internal tools developer for the Customer Services department.
+                    br
+                    |During this role I used an assortment of Microsoft tools from C#, SQL Server, MS Exchange Console to HTML/web development and even ASP .NET.
     div(class="menu")
         each val, index in navitems
             span(id="item" + index, class="menuitem")
